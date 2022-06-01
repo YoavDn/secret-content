@@ -36,6 +36,11 @@ form {
   color: white;
   padding: 0.4rem 0;
 }
+.logout-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
 
 label {
   margin-top: 0.5rem;
@@ -77,4 +82,18 @@ td {
   height: 30px;
   border: black solid 0.2rem;
   padding: 0.3em;
+}
+
+.admin-btn {
+  margin-top: 1rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.4rem;
 }

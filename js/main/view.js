@@ -31,7 +31,7 @@ function renderAdminSecret(usrname) {
   elLoginSection.classList.add("hidden")
   elUsernameGreet.innerText = usrname
 
-  const elAdminLink = `<a class="admin-link" href="admin.html"><button>Admin link</button></a>`
+  const elAdminLink = `<a class="admin-link" href="admin.html"><button class="admin-btn">Admin link</button></a>`
 
   elAdminContainer.innerHTML = elAdminLink
 }

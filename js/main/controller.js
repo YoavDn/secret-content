@@ -3,10 +3,8 @@
 function onLogin(ev) {
   ev.preventDefault()
   ev.stopPropagation()
-  const userInput = document.querySelector("[name=name-input]")
-  const passInput = document.querySelector("[name=pass-input]")
-  const passValue = passInput.value
-  const userValue = userInput.value
+  const userValue = document.querySelector("[name=name-input]").value
+  const passValue = document.querySelector("[name=pass-input]").value
 
   const isUserExsist = checkUser(userValue, passValue)
   emptyUserInput()
