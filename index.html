@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Safe Content</title>
+  </head>
+  <body onload="onInit(event)">
+    <section class="content">
+      <div class="content-container hidden">
+        <h1>Welcome back <span class="user-name-greet">Yoav</span></h1>
+
+        <img
+          class="secret-img"
+          src="/imgs/looki-here-removebg-preview.png"
+          alt=""
+        />
+        <button onclick="onLogout(event)" class="logout-btn">Logout</button>
+        <div class="container-admin-link"></div>
+      </div>
+    </section>
+
+    <section class="login-page">
+      <div class="login-container">
+        <h2 class="login-title">Sign in</h2>
+        <div class="avatar"></div>
+        <form onsubmit="onLogin(event)">
+          <label for="name-input">Username</label>
+          <input name="name-input" type="text" placeholder="Enter Username" />
+          <label for="name-input">Password</label>
+          <input name="pass-input" type="text" placeholder="Enter Password" />
+          <button class="login-btn">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main/model.js"></script>
+    <script src="js/admin/admin-controller.js"></script>
+    <script src="js/admin/admin-model.js"></script>
+    <script src="js/main/view.js"></script>
+    <script src="js/main/controller.js"></script>
+  </body>
+</html>
