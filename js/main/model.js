@@ -59,7 +59,9 @@ function checkUser(usrname, pass) {
     //   console.log(user)
     //   activites.push(user)
     // }
-    const isNewUser = activites.every(activity => activity.id !== user.id)
+    const isNewUser = activites.every(
+      activity => activity.username !== user.username
+    )
     console.log(isNewUser)
 
     if (isNewUser) {

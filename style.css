@@ -96,4 +96,10 @@ button {
   border: none;
   padding: 1rem;
   border-radius: 0.4rem;
+  box-shadow: rgba(99, 99, 99, 0.3) 0 2px 0 0px;
+}
+
+.sort-btn {
+  margin-top: 1rem;
+  width: 50%;
 }
