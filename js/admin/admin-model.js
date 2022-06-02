@@ -18,7 +18,7 @@ function SortActivites(value) {
   }
   if (value === "last-login") {
     activites.sort(
-      (a, b) => Date.parse(b.lastLoginTime) - Date.parse(a.lastLoginTime)
+      (a, b) => Date.parse(a.lastLoginTime) - Date.parse(b.lastLoginTime)
     )
   }
 

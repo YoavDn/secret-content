@@ -15,7 +15,6 @@ function onLogin(ev) {
 
   if (user.isAdmin) {
     renderAdminSecret(user.username)
-    return
   } else {
     renderSecret(user.username)
   }

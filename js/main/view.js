@@ -3,10 +3,12 @@
 const elSecretSection = document.querySelector(".content-container")
 const elLoginSection = document.querySelector(".login-container")
 const elUsernameGreet = document.querySelector(".user-name-greet")
+const elAdminContainer = document.querySelector(".container-admin-link")
 
 function renderSecret(usrname) {
   elSecretSection.classList.remove("hidden")
   elLoginSection.classList.add("hidden")
+  elAdminContainer.classList.add("hidden")
   elUsernameGreet.innerText = usrname
 }
 
@@ -24,14 +26,8 @@ function emptyUserInput() {
 }
 
 function renderAdminSecret(usrname) {
-  const elSecretSection = document.querySelector(".content-container")
-  const elAdminContainer = document.querySelector(".container-admin-link")
-  const elLoginSection = document.querySelector(".login-container")
   elSecretSection.classList.remove("hidden")
+  elAdminContainer.classList.remove("hidden")
   elLoginSection.classList.add("hidden")
   elUsernameGreet.innerText = usrname
-
-  const elAdminLink = `<a class="admin-link" href="admin.html"><button class="admin-btn">Admin link</button></a>`
-
-  elAdminContainer.innerHTML = elAdminLink
 }

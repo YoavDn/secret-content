@@ -50,15 +50,7 @@ function checkUser(usrname, pass) {
 
     console.log(activites)
 
-    // if (
-    //   activites.every(activity => {
-    //     console.log(activity)
-    //   })
-    // ) {
-    //   console.log(activites)
-    //   console.log(user)
-    //   activites.push(user)
-    // }
+    //when the user havnt logged before
     const isNewUser = activites.every(
       activity => activity.username !== user.username
     )
